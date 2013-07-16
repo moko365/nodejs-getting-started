@@ -3,24 +3,46 @@
 
 ## 準備開發環境
 
-* 安裝 NodeJS 在 Windows 上 
-* 安裝 NodeJS 在 Ubuntu Linux 上
+* 安裝 NodeJS 在 Windows 上
+* 安裝 NodeJS 在 Ubuntu Linux 上 使用 apt-get 套件管理
+
+```
+sudo apt-get update
+sudo apt-get install python-software-properties python g++ make
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+```
+
 * 安裝 NodeJS 在 Mac 上
+
+```
+brew install nodejs
+```
 
 ## 工具介紹
 
 * NPM (Node Package Manager) 介紹 ( https://npmjs.org/ )
 * NVM (Node Version Manager) 介紹 ( https://github.com/creationix/nvm )
+
+```
+curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+nvm install 0.10
+nvm use 0.10
+nvm run 0.10
+nvm ls
+nvm deactivate
+```
+
 * REPL
 
-## Hello world
+## 開始寫 NodeJS 程式
 
 * Run first NodeJS application (hello.js)
-* Build a simple Web server with http modele. (server.js)
-* Route url requests with url module.
-* Build Simple REST API
-* Handle URL parameters
-* Use file module (File System) to serve static file on web server
+* Build a simple Web server with http module. (server.js)
+* Route url requests with url module. (server-route.js)
+* Handle URL parameters with query string module. (server-qs.js)
+* Serve static file on web server with File System module. (server-fs.js)
 
 # 課程大綱
 
@@ -35,4 +57,3 @@
 | 1.7 | 我的第一個 NodeJS 程式| Hank | 100P0107_NodeHelloWorld | 00:57
 | 1.8 | NodeJS 概念與使用時機 | Jollen | 100P0108_WhyNodejs | 04:54
 | 1.9 | 撰寫 HTTP Server 程式| Hank | 100P0109_BuildHttpServer | 03:53
-
